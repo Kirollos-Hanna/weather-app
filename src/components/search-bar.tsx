@@ -8,7 +8,7 @@ const fetchCity = async (city: any) => {
     const apikey = process.env.REACT_APP_WEATHER_API_KEY;
     const cityName = city.queryKey[0];
 
-    const res = await fetch('http://dataservice.accuweather.com/locations/v1/cities/search?apikey=' + apikey + '&q=' + cityName);
+    const res = await fetch('https://dataservice.accuweather.com/locations/v1/cities/search?apikey=' + apikey + '&q=' + cityName);
     return res.json();
 }
 

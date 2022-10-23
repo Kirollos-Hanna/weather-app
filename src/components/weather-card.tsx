@@ -13,7 +13,7 @@ const fetchWeather = async (city: any) => {
     const cityKey = city.queryKey[1].key;
 
     const res = await
-        fetch('http://dataservice.accuweather.com/forecasts/v1/daily/1day/' + cityKey + '?apikey=' + apikey + '&metric=true');
+        fetch('https://dataservice.accuweather.com/forecasts/v1/daily/1day/' + cityKey + '?apikey=' + apikey + '&metric=true');
 
     return res.json();
 }
