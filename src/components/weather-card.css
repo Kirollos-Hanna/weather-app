@@ -1,0 +1,171 @@
+.weather-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: inter;
+    width: 60%;
+    padding: 40px;
+
+    -webkit-box-shadow: 0px 0px 8px 4px var(--drop-shadow-color);
+    box-shadow: 0px 0px 8px 4px var(--drop-shadow-color);
+    background: var(--weather-card-background);
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.city-name {
+    opacity: 0.75;
+    font-size: 48px;
+    font-family: inter;
+    color: white;
+}
+
+.country-name {
+    font-size: 20px;
+    background: var(--country-name-background);
+    border-radius: 8px;
+    padding: 0 8px;
+    margin-left: 2px;
+    position: absolute;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+.weather-degrees {
+    background: linear-gradient(to bottom, #000000, #00000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 128px;
+}
+
+.celsius-degrees-img {
+    position: relative;
+    bottom: 40px;
+}
+
+.weather-condition {
+    opacity: 0.75;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+    .weather-container {
+        max-width: 187px;
+    }
+
+    .city-name {
+        font-size: 30px;
+    }
+
+    .country-name {
+        font-size: 15px;
+    }
+
+    .celsius-degrees-img {
+        bottom: 12px;
+        width: 50px;
+    }
+
+    .weather-condition {
+        font-size: 30px;
+    }
+
+    .weather-degrees {
+        font-size: 96px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .weather-container {
+        max-width: 125px;
+    }
+
+    .city-name {
+        font-size: 20px;
+    }
+
+    .country-name {
+        font-size: 10px;
+    }
+
+
+    .celsius-degrees-img {
+        bottom: 12px;
+        width: 30px;
+    }
+
+    .weather-condition {
+        font-size: 20px;
+    }
+
+    .weather-degrees {
+        font-size: 64px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .weather-container {
+        max-width: 94px;
+    }
+
+    .city-name {
+        font-size: 15px;
+    }
+
+    .country-name {
+        font-size: 8px;
+    }
+
+    .celsius-degrees-img {
+        width: 20px;
+    }
+
+    .weather-condition {
+        font-size: 15px;
+    }
+
+    .weather-degrees {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 400px) {
+    .weather-container {
+        max-width: 62px;
+    }
+
+    .city-name {
+        font-size: 10px;
+    }
+
+    .country-name {
+        font-size: 6px;
+    }
+
+    .celsius-degrees-img {
+        width: 20px;
+    }
+
+    .weather-condition {
+        font-size: 10px;
+    }
+
+    .weather-degrees {
+        font-size: 32px;
+    }
+}

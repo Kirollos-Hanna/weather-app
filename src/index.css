@@ -1,10 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+:root {
+  --background: linear-gradient(to top right, #D3D3D3, #EEEEEE);
+  --background-moz: -moz-linear-gradient(bottom left, #D3D3D3, #EEEEEE);
+  --background-webkit: -webkit-linear-gradient(bottom left, #D3D3D3, #EEEEEE);
+  --search-btn-background-color: linear-gradient(to top right, #2561D4, #2763D6);
+  --weather-card-background: linear-gradient(to top right, #AAAAAA, #BFBFBF);
+  --drop-shadow-color: #D4D4D4;
+  --country-name-background: #3D3D3D;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:linear-gradient(to top right, #092376, #040F34);
+    --background-moz: -moz-linear-gradient(bottom left, #092376, #040F34);
+    --background-webkit: -webkit-linear-gradient(bottom left, #092376, #040F34);
+    --search-btn-background-color: linear-gradient(to top right, #113FA6, #0E3585);
+    --weather-card-background: linear-gradient(to top right, #0E3293, #092666);
+    --drop-shadow-color: rgba(3,16,57,0.75);
+    --country-name-background: #041341;
+  }
+}
+
+@font-face {
+  font-family: 'inter';
+  src: local("Inter-Regular"), url(./fonts/inter/Inter-Regular.woff) format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'inter';
+  src: local("Inter-Bold"), url(./fonts/inter/Inter-Bold.woff) format('woff');
+  font-weight: bold;
+}
+
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'inter',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background: #D3D3D3;
+  background: var(--background-webkit);
+  background: var(--background-moz);
+  background: var(--background);
+}
+
+#root {
+  height: 100%;
 }
 
 code {

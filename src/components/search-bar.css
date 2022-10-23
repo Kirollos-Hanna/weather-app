@@ -1,0 +1,127 @@
+.whole-search-bar-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar-container {
+    width: 65%;
+    min-height: 75px;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 8px 0px var(--drop-shadow-color);
+    box-shadow: 0px 0px 8px 0px var(--drop-shadow-color);
+}
+
+.search-bar-input {
+    min-height: 75px;
+    font-size: 36px;
+    white-space: nowrap;
+    font-family: inter;
+    padding: 0 10px;
+    border: 2px solid black;
+    flex-grow: 1;
+    margin-right: -2px;
+}
+
+.search-bar-input:focus {
+    border: 2px solid #2763D6;
+    outline: none;
+}
+
+.show-weather-btn {
+    min-height: 75px;
+    font-size: 36px;
+    width: 35%;
+    white-space: nowrap;
+    font-family: inter;
+    border-radius: 0;
+    border: none;
+    background: var(--search-btn-background-color);
+    color: white;
+}
+
+.show-weather-btn:hover {
+    cursor: pointer;
+}
+
+.error-border,
+.error-border:focus {
+    border: 2px solid red;
+}
+
+
+.error-text {
+    margin-top: 4px;
+    width: 65%;
+    font-family: inter;
+    font-size: 24px;
+    color: red;
+}
+
+@media (max-width: 1200px) {
+    .show-weather-btn {
+        font-size: 24px;
+    }
+
+    .search-bar-input {
+        font-size: 24px;
+    }
+
+    .error-text {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .search-bar-container {
+        min-height: 55px;
+    }
+
+    .show-weather-btn {
+        min-height: 55px;
+        font-size: 16px;
+    }
+
+    .search-bar-input {
+        min-height: 55px;
+        font-size: 16px;
+    }
+    .error-text {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .show-weather-btn {
+        font-size: 12px;
+    }
+
+    .search-bar-input {
+        font-size: 12px;
+    }
+    .error-text {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 400px) {
+    .search-bar-container {
+        min-height: 35px;
+    }
+
+    .show-weather-btn {
+        min-height: 35px;
+        font-size: 8px;
+    }
+
+    .search-bar-input {
+        min-height: 35px;
+        font-size: 8px;
+    }
+    .error-text {
+        font-size: 6px;
+    }
+}
